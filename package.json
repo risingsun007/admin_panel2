@@ -10,7 +10,7 @@
     "build":"tsc "
   },
   "keywords": [],
-  "author": "bautistaj",
+  "author": "unknown",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.11",
