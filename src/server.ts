@@ -96,10 +96,10 @@ class Server {
 
 
         res.redirect('/api/posts');
-        res.send("did not find username and or password");
+        
         return;
       } else {
-        console.log("didn't find username");
+        res.send("did not find username and/or password, please re-enter credentials");
         return;
       }
     });
