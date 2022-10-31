@@ -3,6 +3,7 @@ import { PostController } from './controller/post.controller'; // import the pos
 import { createConnection, ReturningStatementNotSupportedError } from "typeorm";
 import * as PostgressConnectionStringParser from "pg-connection-string";
 import { getLogin } from "./login";
+import { config } from 'process';
 const sessions = require('express-session');
 const path = require('path');
 const cookieParser = require("cookie-parser");
@@ -20,7 +21,7 @@ class Server {
     this.app.use(cookieParser());
     this.app.use(express.urlencoded({ extended: false }));
     this.app.use(sessions({
-      secret: 'secret',
+      secret: process.env.SECRET_SESSION || 'secretfd2312',
       resave: true,
       saveUninitialized: true
     }));
