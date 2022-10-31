@@ -81,8 +81,8 @@ class Server {
         res.send("please define the USERNAME environmental variable on the server");
         return;
       }
-      console.log(`login ${req.body.password} ${process.env.USER_PASSWORD}`);
-      console.log(`password ${process.env.USER_USERNAME} ${req.body.username}`);
+      console.log(`password ${req.body.password} ${process.env.password}`);
+      console.log(`username ${process.env.USER_USERNAME} ${req.body.username}`);
 
       if (!req.body || !req.body.username || !req.body.password) {
         res.send("didn't get right data.  Please try again");
