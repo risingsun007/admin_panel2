@@ -16,9 +16,11 @@
     "typescript": "^4.2.3"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.17.1",
+    "express-session": "^1.17.3",
     "pg": "^8.5.1",
+    "pg-connection-string": "^2.5.0",
     "typeorm": "^0.2.31"
   }
 }
-
