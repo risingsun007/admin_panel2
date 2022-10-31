@@ -32,7 +32,7 @@ class Server {
    * variables it takes the default port 3000
    */
   public configuration() {
-    this.app.set('port', process.env.PORT || 3001);
+    this.app.set('port', process.env.PORT || 80);
     this.app.use(express.json());
   }
 
