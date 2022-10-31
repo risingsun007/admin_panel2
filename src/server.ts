@@ -40,7 +40,6 @@ class Server {
    * Method to configure the routes
    */
   public async routes() {
-    //postgres://yjmqugcxzuayij:153abee270fceca0d7170c99b6336c7ebeb20247ea9110a10d72cdb2dabbf9d0@ec2-3-93-206-109.compute-1.amazonaws.com:5432/df1pn15t3pn3e5
     const databaseUrl: string = process.env.DATABASE_URL || "";
     const connectionOptions = await PostgressConnectionStringParser.parse(databaseUrl);
     console.log(JSON.stringify(connectionOptions));
