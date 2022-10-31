@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc ",
-    "start:dev": "nodemon ./build/server.js"
+    "start:dev": "nodemon ./build/server.js",
+    "start": "node ./build/server.js",
+    "build":"tsc "
   },
   "keywords": [],
   "author": "bautistaj",
